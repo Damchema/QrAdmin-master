@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </FrameLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            android:id="@+id/IM_bi"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TX_mostrar"
+            android:gravity="center"
+            android:text="Nombre"
+            android:layout_marginTop="20dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Curso"
+                android:id="@+id/TX_curso"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="46dp"
+                android:text="EDAD"
+                android:textSize="32dp"
+                android:id="@+id/TX_edad"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.08" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
